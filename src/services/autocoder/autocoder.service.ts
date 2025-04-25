@@ -1,7 +1,7 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
-import * as codingSchemeSchema from '../../../../specs/coding-scheme.schema.fixed.json';
+import * as codingSchemeSchema from 'specs/coding-scheme.schema.json';
 import { ValidationError, Validator, ValidatorResultError } from 'jsonschema';
-import { AutoCodingInstructions } from '../../interfaces/iqb.interfaces';
+import {AutoCodingInstructions} from "iqbspecs-coding-service/interfaces/iqb.interfaces";
 
 
 @Injectable()

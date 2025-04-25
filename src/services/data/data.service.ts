@@ -1,8 +1,8 @@
 import { HttpException, Injectable, HttpStatus, Inject } from '@nestjs/common';
 import * as fs from 'fs';
 import { IdService } from '../id.service';
-import { ResponseRow } from '../../interfaces/api.interfaces';
-import { AutoCodingInstructions } from '../../interfaces/iqb.interfaces';
+import {ResponseRow} from "iqbspecs-coding-service/interfaces/ics-api.interfaces";
+import {AutoCodingInstructions} from "iqbspecs-coding-service/interfaces/iqb.interfaces";
 
 
 @Injectable()

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/api.interfaces.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/iqb.interfaces.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/typeGuards.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/autocoder/autocoder.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/autocoder/autocoder.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/data/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/data/data.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/tasks/tasks.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tasks/tasks.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/worker/worker.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/worker/worker.service.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "paflov"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/iqb-berlin/ics-autocoder.git",
+    "accountId": "ece679cb-c913-4edd-8c6f-7bc3db797602"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2wE4VrrKwgGTPR22L3zpQd7x7gw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/paf/IdeaProjects/ics-autocoder/package.json",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.download-coding-scheme-scheme.executor": "Run",
+    "npm.run AC Service.executor": "Run",
+    "onboarding.tips.debug.path": "/home/paf/IdeaProjects/ics-autocoder/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "ts.external.directory.path": "/home/paf/IdeaProjects/ics-autocoder/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/specs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.download-coding-scheme-scheme">
+    <configuration name="download-coding-scheme-scheme" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="download-coding-scheme-scheme" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.download-coding-scheme-scheme" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="" />
+      <created>1745593425692</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745593425692</updated>
+      <workItem from="1745593426788" duration="3103000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

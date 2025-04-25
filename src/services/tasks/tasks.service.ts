@@ -1,15 +1,15 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
+import { IdService } from '../id.service';
+import { DataService } from '../data/data.service';
 import {
   DataChunk,
   ResponseRow,
   Task,
   TaskAction,
-  TaskEventType, TaskSeed,
-  TaskType
-} from '../../interfaces/api.interfaces';
-import { IdService } from '../id.service';
-import { DataService } from '../data/data.service';
-import { AutoCodingInstructions } from '../../interfaces/iqb.interfaces';
+  TaskEventType,
+  TaskUpdate
+} from "iqbspecs-coding-service/interfaces/ics-api.interfaces";
+import {AutoCodingInstructions} from "iqbspecs-coding-service/interfaces/iqb.interfaces";
 
 @Injectable()
 export class TasksService {
@@ -47,7 +47,7 @@ export class TasksService {
     return Object.values(this.tasks).find(task => TasksService.getLastEvent(task) === 'commit');
   }
 
-  add(seed: TaskSeed, instructions: AutoCodingInstructions): Task {
+  add(seed: TaskUpdate, instructions: AutoCodingInstructions): Task {
     const newTask: Task = {
       id: IdService.create(),
       events: [{
@@ -55,7 +55,7 @@ export class TasksService {
         message: '',
         timestamp: Date.now()
       }],
-      type: seed.type,
+      type: seed.type || 'unknown',
       label: seed.label,
       data: [],
       instructions,
@@ -154,7 +154,7 @@ export class TasksService {
         timestamp: Date.now()
       }],
       id,
-      type: 'undefined',
+      type: 'unknown',
       instructions: exampleCodingScheme
     }
   }

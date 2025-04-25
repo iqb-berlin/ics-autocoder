@@ -3,9 +3,8 @@ import { interval, Observable } from 'rxjs';
 import { TasksService } from '../tasks/tasks.service';
 import { DataService } from '../data/data.service';
 import { IdService } from '../id.service';
-import { CodingScheme } from '@iqb/responses/coding-scheme';
-import { ResponseRow, Task } from '../../interfaces/api.interfaces';
-import { Response } from '@iqb/responses';
+import { ResponseRow, Task, Response } from "iqbspecs-coding-service/interfaces/ics-api.interfaces";
+import { CodingSchemeFactory } from "@iqb/responses";
 
 @Injectable()
 export class WorkerService {
@@ -39,10 +38,10 @@ export class WorkerService {
           agg[row.setId].push(stripSetId(row));
           return agg;
         }, {});
-      const codingScheme = new CodingScheme(task.instructions);
+
       const coded = Object.entries(inputData)
-        .flatMap(([setId, set]): ResponseRow[] =>
-          codingScheme.code(set)
+        .flatMap(([setId, set]: [string, Response[]]): ResponseRow[] =>
+          CodingSchemeFactory.code(set, task.instructions)
             .map((response: Response): ResponseRow => ({ ...response, setId }))
         );
       const id = IdService.create();

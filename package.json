@@ -8,6 +8,7 @@
     "codingServiceApiVersion": "0.1.0"
   },
   "scripts": {
+    "download-coding-scheme-scheme": "wget https://raw.githubusercontent.com/iqb-specifications/coding-scheme/refs/tags/3.2/coding-scheme.schema.json",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
@@ -22,10 +23,13 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@iqb/responses": "^3.4.0",
     "@nestjs/common": "^11.0.1",
     "@nestjs/core": "^11.0.1",
     "@nestjs/platform-express": "^11.0.1",
+    "@iqbspecs/response": "^1.5.0",
+    "@iqbspecs/coding-scheme": "3.2.0",
+    "@iqb/responses": "^4.0.1",
+    "iqbspecs-coding-service": "0.0.7",
     "jsonschema": "^1.5.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1"
@@ -40,6 +44,7 @@
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.7",
     "@types/supertest": "^6.0.2",
+    "@iqb/eslint-config": "^2.1.0",
     "globals": "^15.14.0",
     "jest": "^29.7.0",
     "source-map-support": "^0.5.21",
