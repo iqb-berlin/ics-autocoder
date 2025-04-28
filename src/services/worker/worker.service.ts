@@ -3,8 +3,11 @@ import { interval, Observable } from 'rxjs';
 import { TasksService } from '../tasks/tasks.service';
 import { DataService } from '../data/data.service';
 import { IdService } from '../id.service';
-import { ResponseRow, Task, Response } from "iqbspecs-coding-service/interfaces/ics-api.interfaces";
+import { ResponseRow, Task } from "iqbspecs-coding-service/interfaces/ics-api.interfaces";
 import { CodingSchemeFactory } from "@iqb/responses";
+import { AutocoderService } from '../autocoder/autocoder.service';
+import { VariableCodingData } from '@iqbspecs/coding-scheme/coding-scheme.interface';
+import { Response } from '@iqbspecs/response/response.interface';
 
 @Injectable()
 export class WorkerService {
@@ -12,7 +15,8 @@ export class WorkerService {
 
   constructor(
     private readonly ts: TasksService,
-    private readonly ds: DataService
+    private readonly ds: DataService,
+    private readonly as: AutocoderService,
   ) {
     this.runner
       .subscribe(async second => {
@@ -39,9 +43,15 @@ export class WorkerService {
           return agg;
         }, {});
 
+      let instructions: VariableCodingData[];
+      if ((!task.instructions) || (!this.as.validateScheme(task.instructions))) {
+        throw new Error('invalid task instructions');
+      }
+      instructions = task.instructions.variableCodings
+
       const coded = Object.entries(inputData)
         .flatMap(([setId, set]: [string, Response[]]): ResponseRow[] =>
-          CodingSchemeFactory.code(set, task.instructions)
+          CodingSchemeFactory.code(set, instructions)
             .map((response: Response): ResponseRow => ({ ...response, setId }))
         );
       const id = IdService.create();

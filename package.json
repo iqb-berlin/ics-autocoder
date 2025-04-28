@@ -1,20 +1,17 @@
 {
   "name": "autocoder-service",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "author": "Philipp Franck",
   "license": "MIT",
-  "iqb": {
-    "codingServiceApiVersion": "0.1.0"
-  },
   "scripts": {
-    "download-coding-scheme-scheme": "wget https://raw.githubusercontent.com/iqb-specifications/coding-scheme/refs/tags/3.2/coding-scheme.schema.json",
+    "download-coding-scheme-scheme": "wget https://raw.githubusercontent.com/iqb-specifications/coding-scheme/refs/heads/main/coding-scheme.schema.json -O specs/coding-scheme.schema.json",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/autocoder-service/main",
+    "start:prod": "node dist/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -29,7 +26,7 @@
     "@iqbspecs/response": "^1.5.0",
     "@iqbspecs/coding-scheme": "3.2.0",
     "@iqb/responses": "^4.0.1",
-    "iqbspecs-coding-service": "0.0.7",
+    "iqbspecs-coding-service": "0.0.8",
     "jsonschema": "^1.5.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1"

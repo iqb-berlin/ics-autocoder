@@ -1,7 +1,9 @@
 import { Controller, Get, Req } from '@nestjs/common';
 import * as packageJson from '../../../package.json';
-import { ServiceInfo } from '../../interfaces/api.interfaces';
+import * as apiPackageJson from 'iqbspecs-coding-service/package.json';
 import { AutocoderService } from '../../services/autocoder/autocoder.service';
+import { ServiceInfo } from 'iqbspecs-coding-service/interfaces/ics-api.interfaces';
+import * as os from 'node:os';
 
 @Controller('info')
 export class InfoController {
@@ -12,16 +14,12 @@ export class InfoController {
   @Get()
   get(@Req() request: Request): ServiceInfo {
     return {
-      apiVersion: packageJson?.iqb.codingServiceApiVersion || 'unknown',
-      id: packageJson.name + '@ident',
+      apiVersion: apiPackageJson?.version || 'unknown',
+      id: packageJson.name + '@' + os.hostname(),
       type: packageJson.name,
       version: packageJson.version,
-      taskTypes: {
-        code: {
-          instructionsText: 'Blablabla',
-          instructionsSchema: this.as.schema
-        }
-      }
+      instructionsSchema: this.as.schema,
+      instructionsText: 'Autocoder service for closed items'
     }
   }
 }

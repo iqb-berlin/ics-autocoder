@@ -5,5 +5,5 @@
   "compilerOptions": {
     "deleteOutDir": true
   },
-  "entryFile": "./autocoder-service/src/main.js"
+  "entryFile": "./src/main.js"
 }

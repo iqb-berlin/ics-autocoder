@@ -1,7 +1,9 @@
 import { Body, Controller, Delete, Get, HttpException, HttpStatus, Param, Patch, Put } from '@nestjs/common';
 import { TasksService } from '../../services/tasks/tasks.service';
-import {DataChunk, isTaskSeed, ResponseRow, Task, TaskActions, TaskTypes} from '../../interfaces/api.interfaces';
-import { isCarrier, isResponse } from '../../interfaces/iqb.interfaces';
+import { DataChunk, ResponseRow, Task, TaskActions } from 'iqbspecs-coding-service/interfaces/ics-api.interfaces';
+import { isCarrier } from 'iqbspecs-coding-service/functions/common.typeguards';
+import { isResponse } from 'iqbspecs-coding-service/functions/iqb.typeguards';
+import { isTaskUpdate } from 'iqbspecs-coding-service/functions/ics-api.typeguards';
 import { AutocoderService } from '../../services/autocoder/autocoder.service';
 
 
@@ -22,7 +24,7 @@ export class TasksController {
   put(
     @Body() body: unknown
   ): Task {
-    if (!isTaskSeed(body)) throw new HttpException('Invalid or missing task-type.', HttpStatus.NOT_ACCEPTABLE);
+    if (!isTaskUpdate(body)) throw new HttpException('Invalid or missing task-type.', HttpStatus.NOT_ACCEPTABLE);
     return this.ts.add(body, this.as.getEmptyScheme());
   }
 

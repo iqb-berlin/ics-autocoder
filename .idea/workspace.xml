@@ -5,14 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme.schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/specs/coding-scheme.schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/coding-scheme.interface.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/coding-scheme.interface.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/coding-scheme.interface.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/jest.config.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/jest.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/jest.config.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/test.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/test.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/app.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/app.module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/app.module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/app.module.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/controller/info/info.controller.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/controller/info/info.controller.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/controller/info/info.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/controller/info/info.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/controller/info/info.controller.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/controller/info/info.controller.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/controller/tasks/tasks.controller.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/controller/tasks/tasks.controller.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/controller/tasks/tasks.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/controller/tasks/tasks.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/controller/tasks/tasks.controller.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/controller/tasks/tasks.controller.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/interfaces/api.interfaces.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/interfaces/api.interfaces.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/interfaces/api.interfaces.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/interfaces/iqb.interfaces.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/interfaces/iqb.interfaces.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/interfaces/iqb.interfaces.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/services/autocoder/autocoder.service.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/services/autocoder/autocoder.service.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/services/autocoder/autocoder.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/services/autocoder/autocoder.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/services/autocoder/autocoder.service.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/services/autocoder/autocoder.service.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/services/worker/worker.service.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/services/worker/worker.service.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/services/worker/worker.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/services/worker/worker.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/src/services/worker/worker.service.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/services/worker/worker.service.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nest-cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/nest-cli.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/api.interfaces.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/iqb.interfaces.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/typeGuards.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/autocoder/autocoder.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/autocoder/autocoder.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/data/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/data/data.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/tasks/tasks.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tasks/tasks.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/specs/coding-scheme.schema.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/info/info.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/info/info.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/tasks/tasks.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/tasks/tasks.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/worker/worker.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/worker/worker.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,21 +59,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "paflov"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;paflov&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/iqb-berlin/ics-autocoder.git",
-    "accountId": "ece679cb-c913-4edd-8c6f-7bc3db797602"
+    "accountId": "a2d34a71-4fec-4ba2-ab12-adf4953fdf65"
   }
 }]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2wE4VrrKwgGTPR22L3zpQd7x7gw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -49,6 +83,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "/home/paf/IdeaProjects/ics-autocoder/package.json",
     "node.js.detected.package.eslint": "true",
@@ -62,7 +97,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "ts.external.directory.path": "/home/paf/IdeaProjects/ics-autocoder/node_modules/typescript/lib",
+    "ts.external.directory.path": "/var/www/html/ics-autocoder/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -103,6 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1745593425692</updated>
       <workItem from="1745593426788" duration="3103000" />
+      <workItem from="1745824200686" duration="5170000" />
     </task>
     <servers />
   </component>
