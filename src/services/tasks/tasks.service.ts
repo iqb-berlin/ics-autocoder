@@ -132,6 +132,7 @@ export class TasksService {
     if (!TasksService.hasData(task, chunkId)) {
       throw new HttpException(`Data chunk not attached to task`, HttpStatus.NOT_ACCEPTABLE);
     }
+    task.data = task.data.filter(d => d.id != chunkId);
     this.ds.delete(chunkId);
   }
 

@@ -30,10 +30,11 @@ export class DataService {
   }
 
   delete(chunkId: string): void {
-    if (fs.existsSync(`${this.storageDir}/data/${chunkId}.json`)) {
+    const chunkFilePath = `${this.storageDir}/data/${chunkId}.json`;
+    if (!fs.existsSync(chunkFilePath)) {
       throw new HttpException(`Data chunk not found.`, HttpStatus.NOT_FOUND);
     }
-    fs.rmSync(`${this.storageDir}/${chunkId}.json`); // TODO use async
+    fs.rmSync(chunkFilePath); // TODO use async
   }
 
   restore(): string[] {
