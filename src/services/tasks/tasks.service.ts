@@ -2,13 +2,14 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { IdService } from '../id.service';
 import { DataService } from '../data/data.service';
 import {
+  Coder,
   DataChunk,
   ResponseRow,
   Task,
   TaskAction,
   TaskEventType,
   TaskUpdate
-} from "iqbspecs-coding-service/interfaces/ics-api.interfaces";
+} from 'iqbspecs-coding-service/interfaces/ics-api.interfaces';
 import {AutoCodingInstructions} from "iqbspecs-coding-service/interfaces/iqb.interfaces";
 
 @Injectable()
@@ -167,5 +168,13 @@ export class TasksService {
     if (update.type) task.type = update.type;
     if (update.coder) task.coder = update.coder;
     return task;
+  }
+
+  listCoders(): Coder[] {
+    return this.ds.listCoders();
+  }
+
+  deleteCoder(coderId: string): void {
+    this.ds.deleteCoder(coderId);
   }
 }

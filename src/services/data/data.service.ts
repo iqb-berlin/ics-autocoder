@@ -1,8 +1,9 @@
 import { HttpException, Injectable, HttpStatus, Inject } from '@nestjs/common';
 import * as fs from 'fs';
 import { IdService } from '../id.service';
-import {ResponseRow} from "iqbspecs-coding-service/interfaces/ics-api.interfaces";
+import { Coder, ResponseRow } from 'iqbspecs-coding-service/interfaces/ics-api.interfaces';
 import {AutoCodingInstructions} from "iqbspecs-coding-service/interfaces/iqb.interfaces";
+import { isCoder } from 'iqbspecs-coding-service/functions/ics-api.typeguards';
 
 
 @Injectable()
@@ -53,5 +54,24 @@ export class DataService {
     return <AutoCodingInstructions>{
       variableCodings: []
     }
+  }
+
+  listCoders(): Coder[] {
+    return fs.readdirSync(`${this.storageDir}/instructions/`)
+      .filter(fileName => fileName.endsWith('.json'))
+      .map(fileName => {
+        return {
+          id: fileName.substring(0, fileName.indexOf('.json')),
+          label: fileName
+        };
+      });
+  }
+
+  deleteCoder(coderId: string): void {
+    const filePath = `${this.storageDir}/instructions/${coderId}.json`;
+    if (!fs.existsSync(filePath)) {
+      throw new HttpException(`Coder not found.`, HttpStatus.NOT_FOUND);
+    }
+    fs.rmSync(filePath); // TODO use async
   }
 }

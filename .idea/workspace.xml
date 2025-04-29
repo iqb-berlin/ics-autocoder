@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Fix delete chunk function">
+    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Implement changes in ics-api: remove patch instructions endpoint in favor of update task endpoint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/tasks/tasks.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/tasks/tasks.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/data/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/data/data.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/tasks/tasks.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tasks/tasks.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +47,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/var/www/html/ics-autocoder/test/data",
+    "last_opened_file_path": "/var/www/html/ics-autocoder/data/instructions",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,11 +65,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/instructions" />
       <recent name="$PROJECT_DIR$/test/data" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/data/data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/instructions" />
       <recent name="$PROJECT_DIR$/specs" />
     </key>
   </component>
@@ -105,7 +108,7 @@
       <updated>1745593425692</updated>
       <workItem from="1745593426788" duration="3103000" />
       <workItem from="1745824200686" duration="6067000" />
-      <workItem from="1745911867923" duration="4940000" />
+      <workItem from="1745911867923" duration="6135000" />
     </task>
     <task id="LOCAL-00001" summary="Implement current versions if specifications">
       <option name="closed" value="true" />
@@ -139,7 +142,23 @@
       <option name="project" value="LOCAL" />
       <updated>1745924238412</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implement changes in ics-api: remove patch instructions endpoint in favor of update task endpoint">
+      <option name="closed" value="true" />
+      <created>1745930093995</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745930093995</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Implement changes in ics-api: remove patch instructions endpoint in favor of update task endpoint">
+      <option name="closed" value="true" />
+      <created>1745931040100</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745931040100</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +168,7 @@
     <MESSAGE value="Implement current versions if specifications" />
     <MESSAGE value="Implement bug free version of the the coding-scheme-scheme" />
     <MESSAGE value="Fix delete chunk function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix delete chunk function" />
+    <MESSAGE value="Implement changes in ics-api: remove patch instructions endpoint in favor of update task endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement changes in ics-api: remove patch instructions endpoint in favor of update task endpoint" />
   </component>
 </project>
