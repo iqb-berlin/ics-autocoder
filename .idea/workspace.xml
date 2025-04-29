@@ -4,49 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Fix delete chunk function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme.schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/specs/coding-scheme.schema.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/coding-scheme.interface.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/coding-scheme.interface.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/coding-scheme.interface.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/jest.config.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/jest.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/jest.config.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/test.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/specs/coding-scheme/test.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/app.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/app.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/app.module.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/app.module.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/controller/info/info.controller.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/controller/info/info.controller.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/controller/info/info.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/controller/info/info.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/controller/info/info.controller.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/controller/info/info.controller.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/controller/tasks/tasks.controller.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/controller/tasks/tasks.controller.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/controller/tasks/tasks.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/controller/tasks/tasks.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/controller/tasks/tasks.controller.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/controller/tasks/tasks.controller.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/interfaces/api.interfaces.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/interfaces/api.interfaces.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/interfaces/api.interfaces.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/interfaces/iqb.interfaces.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/interfaces/iqb.interfaces.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/interfaces/iqb.interfaces.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/services/autocoder/autocoder.service.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/services/autocoder/autocoder.service.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/services/autocoder/autocoder.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/services/autocoder/autocoder.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/services/autocoder/autocoder.service.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/services/autocoder/autocoder.service.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/services/worker/worker.service.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/services/worker/worker.service.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/services/worker/worker.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/services/worker/worker.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/src/services/worker/worker.service.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/src/services/worker/worker.service.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tsconfig.build.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nest-cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/nest-cli.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/specs/coding-scheme.schema.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/info/info.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/info/info.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/tasks/tasks.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/tasks/tasks.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/worker/worker.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/worker/worker.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/tasks/tasks.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tasks/tasks.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,12 +26,12 @@
     &quot;assignee&quot;: &quot;paflov&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/iqb-berlin/ics-autocoder.git",
-    "accountId": "a2d34a71-4fec-4ba2-ab12-adf4953fdf65"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/iqb-berlin/ics-autocoder.git&quot;,
+    &quot;accountId&quot;: &quot;a2d34a71-4fec-4ba2-ab12-adf4953fdf65&quot;
   }
-}]]></component>
+}</component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -85,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/paf/IdeaProjects/ics-autocoder/package.json",
+    "last_opened_file_path": "/var/www/html/ics-autocoder/test/data",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -102,11 +63,16 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test/data" />
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/data/data" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/specs" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.download-coding-scheme-scheme">
+  <component name="RunManager" selected="npm.run AC Service">
     <configuration name="download-coding-scheme-scheme" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -138,11 +104,51 @@
       <option name="presentableId" value="Default" />
       <updated>1745593425692</updated>
       <workItem from="1745593426788" duration="3103000" />
-      <workItem from="1745824200686" duration="5170000" />
+      <workItem from="1745824200686" duration="6067000" />
+      <workItem from="1745911867923" duration="4940000" />
     </task>
+    <task id="LOCAL-00001" summary="Implement current versions if specifications">
+      <option name="closed" value="true" />
+      <created>1745843853841</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1745843853841</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Implement bug free version of the the coding-scheme-scheme">
+      <option name="closed" value="true" />
+      <created>1745843879642</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1745843879642</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fix delete chunk function">
+      <option name="closed" value="true" />
+      <created>1745924222762</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745924222762</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fix delete chunk function">
+      <option name="closed" value="true" />
+      <created>1745924238412</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745924238412</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implement current versions if specifications" />
+    <MESSAGE value="Implement bug free version of the the coding-scheme-scheme" />
+    <MESSAGE value="Fix delete chunk function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix delete chunk function" />
   </component>
 </project>

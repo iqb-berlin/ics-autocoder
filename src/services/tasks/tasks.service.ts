@@ -160,9 +160,12 @@ export class TasksService {
     }
   }
 
-  updateInstructions(taskId: string, instructions: AutoCodingInstructions): Task {
+  update(taskId: string, update: TaskUpdate): Task {
     const task = this.get(taskId);
-    task.instructions = instructions;
+    if (update.instructions) task.instructions = update.instructions;
+    if (update.label) task.label = update.label;
+    if (update.type) task.type = update.type;
+    if (update.coder) task.coder = update.coder;
     return task;
   }
 }

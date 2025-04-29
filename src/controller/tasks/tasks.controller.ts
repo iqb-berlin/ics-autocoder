@@ -1,7 +1,13 @@
-import { Body, Controller, Delete, Get, HttpException, HttpStatus, Param, Patch, Put } from '@nestjs/common';
+import { Body, Controller, Delete, Get, HttpException, HttpStatus, Param, Patch, Post, Put } from '@nestjs/common';
 import { TasksService } from '../../services/tasks/tasks.service';
-import { DataChunk, ResponseRow, Task, TaskActions } from 'iqbspecs-coding-service/interfaces/ics-api.interfaces';
-import { isCarrier } from 'iqbspecs-coding-service/functions/common.typeguards';
+import {
+  DataChunk,
+  ResponseRow,
+  Task, TaskAction,
+  TaskActions,
+  TaskUpdate
+} from 'iqbspecs-coding-service/interfaces/ics-api.interfaces';
+import { isA, isCarrier } from 'iqbspecs-coding-service/functions/common.typeguards';
 import { isResponse } from 'iqbspecs-coding-service/functions/iqb.typeguards';
 import { isTaskUpdate } from 'iqbspecs-coding-service/functions/ics-api.typeguards';
 import { AutocoderService } from '../../services/autocoder/autocoder.service';
@@ -38,10 +44,21 @@ export class TasksController {
   @Patch('/:taskId')
   patch(
     @Param('taskId') taskId: string,
-    @Body() body: unknown // { action: TaskAction }
+    @Body() body: TaskUpdate
   ): Task {
-    if (!isCarrier(body, 'action', TaskActions)) throw new HttpException('Invalid body', HttpStatus.NOT_ACCEPTABLE);
-    return this.ts.action(taskId, body.action);
+    if (body.instructions && !this.as.validateScheme(body.instructions)) {
+      throw new HttpException('Validation of coding scheme did not work.', HttpStatus.INTERNAL_SERVER_ERROR)
+    }
+    return this.ts.update(taskId, body);
+  }
+
+  @Post(':taskId/:action')
+  post(
+    @Param('taskId') taskId: string,
+    @Param('action') action: string
+  ): Task {
+    if (!isA<TaskAction>(TaskActions, action)) throw new HttpException(`Unknown action ${action}.`, HttpStatus.NOT_ACCEPTABLE);
+    return this.ts.action(taskId, action);
   }
 
   @Delete('/:taskId')
@@ -74,19 +91,6 @@ export class TasksController {
     @Param('chunkId') chunkId: string
   ): void {
     this.ts.deleteData(taskId, chunkId)
-  }
-
-  @Patch('/:taskId/instructions')
-  patchInstructions(
-    @Param('taskId') taskId: string,
-    @Body() body: unknown
-  ) {
-    if ((typeof body !== 'object') || (body == null)) {
-      console.log(body);
-      throw new HttpException('Invalid body!', HttpStatus.NOT_ACCEPTABLE);
-    }
-    if (this.as.validateScheme(body)) return this.ts.updateInstructions(taskId, body)
-    throw new HttpException('Validation of coding scheme did not work.', HttpStatus.INTERNAL_SERVER_ERROR)
   }
 
   static validateDataChunk(thing: unknown): thing is ResponseRow[] {
