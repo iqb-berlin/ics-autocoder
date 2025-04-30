@@ -97,10 +97,7 @@ export class TasksService {
 
   delete(id: string): void {
     const task = this.get(id);
-    const lastEvent = TasksService.getLastEvent(task);
-    if (!['fail', 'finish', 'abort'].includes(lastEvent)) {
-      throw new HttpException(`Can not delete ${lastEvent}ed task.`, HttpStatus.FORBIDDEN);
-    }
+    task.data.forEach(chunk => this.deleteData(id, chunk.id));
     delete this.tasks[id];
   }
 
