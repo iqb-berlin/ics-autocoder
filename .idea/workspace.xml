@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Implement changes in ics-api: remove patch instructions endpoint in favor of update task endpoint">
+    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Stop tracking data dir">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/data/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/data/data.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/tasks/tasks.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/tasks/tasks.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/tasks/tasks.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tasks/tasks.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,27 +41,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/var/www/html/ics-autocoder/data/instructions",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.download-coding-scheme-scheme.executor": "Run",
-    "npm.run AC Service.executor": "Run",
-    "onboarding.tips.debug.path": "/home/paf/IdeaProjects/ics-autocoder/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "ts.external.directory.path": "/var/www/html/ics-autocoder/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/var/www/html/ics-autocoder/data/instructions&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.download-coding-scheme-scheme.executor&quot;: &quot;Run&quot;,
+    &quot;npm.run AC Service.executor&quot;: &quot;Run&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/paf/IdeaProjects/ics-autocoder/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/var/www/html/ics-autocoder/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data/instructions" />
@@ -108,7 +107,8 @@
       <updated>1745593425692</updated>
       <workItem from="1745593426788" duration="3103000" />
       <workItem from="1745824200686" duration="6067000" />
-      <workItem from="1745911867923" duration="6135000" />
+      <workItem from="1745911867923" duration="6764000" />
+      <workItem from="1745998772369" duration="642000" />
     </task>
     <task id="LOCAL-00001" summary="Implement current versions if specifications">
       <option name="closed" value="true" />
@@ -158,7 +158,31 @@
       <option name="project" value="LOCAL" />
       <updated>1745931040100</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add endpoints for coder management">
+      <option name="closed" value="true" />
+      <created>1745931286815</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745931286815</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Stop tracking data dir">
+      <option name="closed" value="true" />
+      <created>1745931365126</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745931365126</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Stop tracking data dir">
+      <option name="closed" value="true" />
+      <created>1745931408750</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1745931408750</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +193,8 @@
     <MESSAGE value="Implement bug free version of the the coding-scheme-scheme" />
     <MESSAGE value="Fix delete chunk function" />
     <MESSAGE value="Implement changes in ics-api: remove patch instructions endpoint in favor of update task endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement changes in ics-api: remove patch instructions endpoint in favor of update task endpoint" />
+    <MESSAGE value="Add endpoints for coder management" />
+    <MESSAGE value="Stop tracking data dir" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stop tracking data dir" />
   </component>
 </project>

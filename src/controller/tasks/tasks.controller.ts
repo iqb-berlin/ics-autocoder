@@ -7,7 +7,7 @@ import {
   TaskActions,
   TaskUpdate
 } from 'iqbspecs-coding-service/interfaces/ics-api.interfaces';
-import { isA, isCarrier } from 'iqbspecs-coding-service/functions/common.typeguards';
+import { isA } from 'iqbspecs-coding-service/functions/common.typeguards';
 import { isResponse } from 'iqbspecs-coding-service/functions/iqb.typeguards';
 import { isTaskUpdate } from 'iqbspecs-coding-service/functions/ics-api.typeguards';
 import { AutocoderService } from '../../services/autocoder/autocoder.service';
@@ -31,7 +31,7 @@ export class TasksController {
     @Body() body: unknown
   ): Task {
     if (!isTaskUpdate(body)) throw new HttpException('Invalid or missing task-type.', HttpStatus.NOT_ACCEPTABLE);
-    return this.ts.add(body, this.as.getEmptyScheme());
+    return this.ts.add(body);
   }
 
   @Get(':taskId')

@@ -10,12 +10,13 @@ import {
   TaskEventType,
   TaskUpdate
 } from 'iqbspecs-coding-service/interfaces/ics-api.interfaces';
-import {AutoCodingInstructions} from "iqbspecs-coding-service/interfaces/iqb.interfaces";
+import { AutocoderService } from '../autocoder/autocoder.service';
 
 @Injectable()
 export class TasksService {
   constructor(
-    private ds: DataService
+    private readonly ds: DataService,
+    private readonly as: AutocoderService,
   ) {
     this.restore();
   }
@@ -48,7 +49,7 @@ export class TasksService {
     return Object.values(this.tasks).find(task => TasksService.getLastEvent(task) === 'commit');
   }
 
-  add(seed: TaskUpdate, instructions: AutoCodingInstructions): Task {
+  add(seed: TaskUpdate): Task {
     const newTask: Task = {
       id: IdService.create(),
       events: [{
@@ -57,9 +58,10 @@ export class TasksService {
         timestamp: Date.now()
       }],
       type: seed.type || 'unknown',
-      label: seed.label,
+      label: seed.label || 'New Task',
       data: [],
-      instructions,
+      instructions: seed.instructions || (seed.type === 'train' ? this.as.getEmptyScheme() : undefined),
+      coder: seed.coder
     }
     this.tasks[newTask.id] = newTask;
     return newTask;
