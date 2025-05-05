@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Stop tracking data dir">
+    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Fix task deletion:&#10;- tasks can be deleted in every state of the life cycle now&#10;- attached data gets removed as well">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/tasks/tasks.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/tasks/tasks.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/tasks/tasks.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tasks/tasks.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +108,8 @@
       <workItem from="1745593426788" duration="3103000" />
       <workItem from="1745824200686" duration="6067000" />
       <workItem from="1745911867923" duration="6764000" />
-      <workItem from="1745998772369" duration="642000" />
+      <workItem from="1745998772369" duration="5214000" />
+      <workItem from="1746429084541" duration="1033000" />
     </task>
     <task id="LOCAL-00001" summary="Implement current versions if specifications">
       <option name="closed" value="true" />
@@ -182,11 +183,46 @@
       <option name="project" value="LOCAL" />
       <updated>1745931408750</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Correctly apply seeded task when create a new one">
+      <option name="closed" value="true" />
+      <created>1745999542696</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1745999542697</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Correctly apply seeded task when create a new one">
+      <option name="closed" value="true" />
+      <created>1745999556976</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1745999556976</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fix task deletion:&#10;- tasks can be deleted in every state of the life cycle now&#10;- attached data gets removed as well">
+      <option name="closed" value="true" />
+      <created>1745999812586</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1745999812586</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implement current versions if specifications" />
@@ -195,6 +231,8 @@
     <MESSAGE value="Implement changes in ics-api: remove patch instructions endpoint in favor of update task endpoint" />
     <MESSAGE value="Add endpoints for coder management" />
     <MESSAGE value="Stop tracking data dir" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stop tracking data dir" />
+    <MESSAGE value="Correctly apply seeded task when create a new one" />
+    <MESSAGE value="Fix task deletion:&#10;- tasks can be deleted in every state of the life cycle now&#10;- attached data gets removed as well" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix task deletion:&#10;- tasks can be deleted in every state of the life cycle now&#10;- attached data gets removed as well" />
   </component>
 </project>
