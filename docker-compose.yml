@@ -1,0 +1,7 @@
+services:
+  ics-ac:
+    image: ${REGISTRY_PATH}ics-ac
+    build:
+      context: .
+    ports:
+      - "3000:3000"
