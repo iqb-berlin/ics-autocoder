@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Fix task deletion:&#10;- tasks can be deleted in every state of the life cycle now&#10;- attached data gets removed as well">
+    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Add Dockerfile, compose files etc. for productive deployment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +110,7 @@
       <workItem from="1745911867923" duration="6764000" />
       <workItem from="1745998772369" duration="5214000" />
       <workItem from="1746429084541" duration="1033000" />
-      <workItem from="1746548371316" duration="1538000" />
+      <workItem from="1746548371316" duration="2324000" />
     </task>
     <task id="LOCAL-00001" summary="Implement current versions if specifications">
       <option name="closed" value="true" />
@@ -207,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745999812586</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add Dockerfile, compose files etc. for productive deployment">
+      <option name="closed" value="true" />
+      <created>1746549966758</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1746549966758</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +242,7 @@
     <MESSAGE value="Stop tracking data dir" />
     <MESSAGE value="Correctly apply seeded task when create a new one" />
     <MESSAGE value="Fix task deletion:&#10;- tasks can be deleted in every state of the life cycle now&#10;- attached data gets removed as well" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix task deletion:&#10;- tasks can be deleted in every state of the life cycle now&#10;- attached data gets removed as well" />
+    <MESSAGE value="Add Dockerfile, compose files etc. for productive deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Dockerfile, compose files etc. for productive deployment" />
   </component>
 </project>
