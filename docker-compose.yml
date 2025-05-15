@@ -1,5 +1,6 @@
 services:
   ics-ac:
+    container_name: ics-ac
     image: ${REGISTRY_PATH}ics-ac
     build:
       context: .

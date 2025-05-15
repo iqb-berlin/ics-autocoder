@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Fix make command for image pushing" />
+    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment=" Improve make push-iqb-registry command&#10;    - use registry env variable&#10;    - use tag env variable">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +93,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
       </set>
     </attachedChunks>
   </component>
@@ -109,6 +111,10 @@
       <workItem from="1746429084541" duration="1033000" />
       <workItem from="1746548371316" duration="2324000" />
       <workItem from="1746550787245" duration="22000" />
+      <workItem from="1747128450716" duration="93000" />
+      <workItem from="1747142010440" duration="648000" />
+      <workItem from="1747206496324" duration="3978000" />
+      <workItem from="1747218632979" duration="83000" />
     </task>
     <task id="LOCAL-00001" summary="Implement current versions if specifications">
       <option name="closed" value="true" />
@@ -222,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746550806128</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary=" Improve make push-iqb-registry command&#10;    - use registry env variable&#10;    - use tag env variable">
+      <option name="closed" value="true" />
+      <created>1747128528812</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1747128528812</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +264,7 @@
     <MESSAGE value="Fix task deletion:&#10;- tasks can be deleted in every state of the life cycle now&#10;- attached data gets removed as well" />
     <MESSAGE value="Add Dockerfile, compose files etc. for productive deployment" />
     <MESSAGE value="Fix make command for image pushing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix make command for image pushing" />
+    <MESSAGE value=" Improve make push-iqb-registry command&#10;    - use registry env variable&#10;    - use tag env variable" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Improve make push-iqb-registry command&#10;    - use registry env variable&#10;    - use tag env variable" />
   </component>
 </project>
