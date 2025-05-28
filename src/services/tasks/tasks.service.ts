@@ -72,8 +72,8 @@ export class TasksService {
     const lastEvent = TasksService.getLastEvent(task);
     switch (taskAction) {
       case 'commit':
-        if (lastEvent !== 'create') {
-          throw new HttpException(`Can not commit ${lastEvent}ed task.`, HttpStatus.NOT_ACCEPTABLE);
+        if (['start', 'commit'].includes(lastEvent)) {
+          throw new HttpException(`Can not commit task in status is ${lastEvent}.`, HttpStatus.NOT_ACCEPTABLE);
         }
         task.events.push({
           status: 'commit',

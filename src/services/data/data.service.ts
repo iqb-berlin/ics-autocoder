@@ -3,7 +3,6 @@ import * as fs from 'fs';
 import { IdService } from '../id.service';
 import { Coder, ResponseRow } from 'iqbspecs-coding-service/interfaces/ics-api.interfaces';
 import {AutoCodingInstructions} from "iqbspecs-coding-service/interfaces/iqb.interfaces";
-import { isCoder } from 'iqbspecs-coding-service/functions/ics-api.typeguards';
 
 
 @Injectable()
