@@ -14,6 +14,8 @@ FROM node:22-bookworm-slim
 
 RUN mkdir /app
 RUN mkdir /app/data
+RUN mkdir /app/data/data
+RUN mkdir /app/data/instructions
 
 WORKDIR /app
 
