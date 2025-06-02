@@ -33,12 +33,12 @@ services:
       - "traefik.docker.network=app-net"
     environment:
       <<: *env-oauth2-proxy
-      OAUTH2_PROXY_CLIENT_ID: ${ICS_AC_CLIENT_ID}
+      OAUTH2_PROXY_CLIENT_ID: ics-ac
       OAUTH2_PROXY_CLIENT_SECRET: ${ICS_AC_CLIENT_SECRET}
       OAUTH2_PROXY_REDIRECT_URL: https://ac.${SERVER_NAME}/oauth2/callback
       OAUTH2_PROXY_COOKIE_SECRET: ${ICS_AC_COOKIE_SECRET}
-      OAUTH2_PROXY_EMAIL_DOMAINS: ${ICS_AC_EMAIL_DOMAIN}
       OAUTH2_PROXY_UPSTREAMS: http://ics-ac:3000
+      OAUTH2_PROXY_EMAIL_DOMAINS: ${TRAEFIK_EMAIL_DOMAIN}
     expose:
       - 4180
     networks:

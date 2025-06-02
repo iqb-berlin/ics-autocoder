@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Create data dir subdirectories">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ics-autocoder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ics-autocoder.iml" afterDir="false" />
-    </list>
+    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Remove unnecessary environment variables" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +118,7 @@
       <workItem from="1747380205882" duration="2145000" />
       <workItem from="1747388304549" duration="5942000" />
       <workItem from="1748418399467" duration="4535000" />
-      <workItem from="1748849846662" duration="3660000" />
+      <workItem from="1748849846662" duration="5682000" />
     </task>
     <task id="LOCAL-00001" summary="Implement current versions if specifications">
       <option name="closed" value="true" />
@@ -268,7 +264,23 @@
       <option name="project" value="LOCAL" />
       <updated>1748428280974</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Same Makefile as in other ics projects">
+      <option name="closed" value="true" />
+      <created>1748858006441</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1748858006441</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Remove unnecessary environment variables">
+      <option name="closed" value="true" />
+      <created>1748865357187</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1748865357187</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +312,8 @@
     <MESSAGE value="Repair prod compose file" />
     <MESSAGE value="Allow recommit of task" />
     <MESSAGE value="Create data dir subdirectories" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create data dir subdirectories" />
+    <MESSAGE value="Same Makefile as in other ics projects" />
+    <MESSAGE value="Remove unnecessary environment variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove unnecessary environment variables" />
   </component>
 </project>
