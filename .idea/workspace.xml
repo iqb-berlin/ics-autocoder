@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Fix docker-compose.prod.yml to work with oauth2proxy and keycloak">
+    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Make CORS configurable">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/info/info.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/info/info.controller.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +127,7 @@
       <workItem from="1748418399467" duration="4535000" />
       <workItem from="1748849846662" duration="6336000" />
       <workItem from="1749137799896" duration="232000" />
-      <workItem from="1749816579337" duration="668000" />
+      <workItem from="1749816579337" duration="5045000" />
     </task>
     <task id="LOCAL-00001" summary="Implement current versions if specifications">
       <option name="closed" value="true" />
@@ -301,7 +305,31 @@
       <option name="project" value="LOCAL" />
       <updated>1749137827993</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Make CORS configurable">
+      <option name="closed" value="true" />
+      <created>1749817286968</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1749817286968</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Make CORS configurable">
+      <option name="closed" value="true" />
+      <created>1749817296443</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1749817296443</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Make CORS configurable">
+      <option name="closed" value="true" />
+      <created>1749817943169</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1749817943170</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,6 +364,7 @@
     <MESSAGE value="Same Makefile as in other ics projects" />
     <MESSAGE value="Remove unnecessary environment variables" />
     <MESSAGE value="Fix docker-compose.prod.yml to work with oauth2proxy and keycloak" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix docker-compose.prod.yml to work with oauth2proxy and keycloak" />
+    <MESSAGE value="Make CORS configurable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make CORS configurable" />
   </component>
 </project>

@@ -1,14 +1,14 @@
 run:
-	docker compose -f docker-compose.yml up
+	docker compose -f docker-compose.yml -f docker-compose.dev.yml up
 
 up:
-	docker compose -f docker-compose.yml up -d
+	docker compose -f docker-compose.yml -f docker-compose.dev.yml up -d
 
 down:
-	docker compose -f docker-compose.yml up
+	docker compose -f docker-compose.yml -f docker-compose.dev.yml down
 
 logs:
-	docker compose -f docker-compose.yml logs -f $(SERVICE)
+	docker compose -f docker-compose.yml  -f docker-compose.dev.yml logs -f $(SERVICE)
 
 run-prod:
 	docker compose -f docker-compose.yml -f docker-compose.prod.yml --env-file .env.ics-is up
@@ -22,11 +22,8 @@ down-prod:
 logs-prod:
 	docker compose -f docker-compose.yml -f docker-compose.prod.yml --env-file .env.ics-is logs
 
-
-
-include .env.ics-ac
 push-iqb-registry:
 	docker compose -f docker-compose.yml -f docker-compose.prod.yml --env-file .env.ics-ac build
 	docker login scm.cms.hu-berlin.de:4567
-	docker push $(REGISTRY_PATH)ics-ac:$(TAG)
+	bash -c 'source .env.ics-hullm && docker push $${REGISTRY_PATH}ics-ac:$${TAG}'
 	docker logout

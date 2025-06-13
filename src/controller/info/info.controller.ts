@@ -19,7 +19,8 @@ export class InfoController {
       type: packageJson.name,
       version: packageJson.version,
       instructionsSchema: this.as.schema,
-      instructionsText: 'Autocoder service for closed items'
+      instructionsText: 'Autocoder service for closed items',
+      mode: 'direct'
     }
   }
 }
