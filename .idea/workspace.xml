@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Remove unnecessary environment variables">
+    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Fix docker-compose.prod.yml to work with oauth2proxy and keycloak">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,28 +40,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/var/www/html/ics-autocoder",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.download-coding-scheme-scheme.executor": "Run",
-    "npm.run AC Service.executor": "Run",
-    "onboarding.tips.debug.path": "/home/paf/IdeaProjects/ics-autocoder/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "/var/www/html/ics-autocoder/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/var/www/html/ics-autocoder&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.download-coding-scheme-scheme.executor&quot;: &quot;Run&quot;,
+    &quot;npm.run AC Service.executor&quot;: &quot;Run&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/paf/IdeaProjects/ics-autocoder/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/var/www/html/ics-autocoder/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -94,7 +95,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
       </set>
     </attachedChunks>
   </component>
@@ -121,6 +122,8 @@
       <workItem from="1747388304549" duration="5942000" />
       <workItem from="1748418399467" duration="4535000" />
       <workItem from="1748849846662" duration="6336000" />
+      <workItem from="1749137799896" duration="232000" />
+      <workItem from="1749816579337" duration="668000" />
     </task>
     <task id="LOCAL-00001" summary="Implement current versions if specifications">
       <option name="closed" value="true" />
@@ -290,7 +293,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748865490468</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Fix docker-compose.prod.yml to work with oauth2proxy and keycloak">
+      <option name="closed" value="true" />
+      <created>1749137827993</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1749137827993</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +335,7 @@
     <MESSAGE value="Create data dir subdirectories" />
     <MESSAGE value="Same Makefile as in other ics projects" />
     <MESSAGE value="Remove unnecessary environment variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove unnecessary environment variables" />
+    <MESSAGE value="Fix docker-compose.prod.yml to work with oauth2proxy and keycloak" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix docker-compose.prod.yml to work with oauth2proxy and keycloak" />
   </component>
 </project>
