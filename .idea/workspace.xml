@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Add dev compose file">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Implement new ICS API 0.2 and include working examples">
+      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/data/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/data/data.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/id.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/id.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/tasks/tasks.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tasks/tasks.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/worker/worker.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/worker/worker.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/data/coding-scheme.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/data/coding-scheme.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +130,7 @@
       <workItem from="1749137799896" duration="232000" />
       <workItem from="1749816579337" duration="6101000" />
       <workItem from="1750232700866" duration="3023000" />
-      <workItem from="1750242273085" duration="1456000" />
+      <workItem from="1750242273085" duration="1790000" />
     </task>
     <task id="LOCAL-00001" summary="Implement current versions if specifications">
       <option name="closed" value="true" />
@@ -342,7 +340,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750163592770</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Implement new ICS API 0.2 and include working examples">
+      <option name="closed" value="true" />
+      <created>1750245439861</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1750245439861</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +385,8 @@
     <MESSAGE value="Fix docker-compose.prod.yml to work with oauth2proxy and keycloak" />
     <MESSAGE value="Make CORS configurable" />
     <MESSAGE value="Add dev compose file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add dev compose file" />
+    <MESSAGE value="Implement new ICS API 0.2 and include working examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement new ICS API 0.2 and include working examples" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

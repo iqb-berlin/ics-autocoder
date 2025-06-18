@@ -1,8 +1,8 @@
+/* eslint-disable no-console */
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import * as codingSchemeSchema from 'specs/coding-scheme.schema.json';
 import { ValidationError, Validator, ValidatorResultError } from 'jsonschema';
-import {AutoCodingInstructions} from "iqbspecs-coding-service/interfaces/iqb.interfaces";
-
+import { AutoCodingInstructions } from 'iqbspecs-coding-service/interfaces/iqb.interfaces';
 
 @Injectable()
 export class AutocoderService {
@@ -15,12 +15,12 @@ export class AutocoderService {
       return true;
     } catch (e) {
       console.log(e);
-      const text = (e instanceof ValidatorResultError) ?
-        (e.errors as unknown as ValidationError[]).map(e => e.stack) : // circumvent buggy type definition of ValidatorResultError
+      const text = (e instanceof ValidatorResultError) ? // circumvent buggy type definition of ValidatorResultError
+        (e.errors as unknown as ValidationError[]).map(err => err.stack) :
         e;
       console.error(text);
       console.log(codingScheme);
-      throw new HttpException('Invalid Scheme: ' + text, HttpStatus.NOT_ACCEPTABLE);
+      throw new HttpException(`Invalid Scheme: ${text}`, HttpStatus.NOT_ACCEPTABLE);
     }
   }
 

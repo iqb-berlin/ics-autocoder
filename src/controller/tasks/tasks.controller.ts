@@ -1,5 +1,7 @@
-import { Body, Controller, Delete, Get, HttpException, HttpStatus, Param, Patch, Post, Put } from '@nestjs/common';
-import { TasksService } from '../../services/tasks/tasks.service';
+/* eslint-disable no-console */
+import {
+  Body, Controller, Delete, Get, HttpException, HttpStatus, Param, Patch, Post, Put
+} from '@nestjs/common';
 import {
   DataChunk,
   ResponseRow,
@@ -10,8 +12,8 @@ import {
 import { isA } from 'iqbspecs-coding-service/functions/common.typeguards';
 import { isResponse } from 'iqbspecs-coding-service/functions/iqb.typeguards';
 import { isTaskUpdate } from 'iqbspecs-coding-service/functions/ics-api.typeguards';
+import { TasksService } from '../../services/tasks/tasks.service';
 import { AutocoderService } from '../../services/autocoder/autocoder.service';
-
 
 @Controller('tasks')
 export class TasksController {
@@ -71,7 +73,7 @@ export class TasksController {
   @Put('/:taskId/data')
   putData(
     @Param('taskId') taskId: string,
-    @Body() body: unknown //IQBVariable[]
+    @Body() body: unknown // IQBVariable[]
   ): DataChunk {
     if (!TasksController.validateDataChunk(body)) return { id: 'invalid data', type: 'input' };
     return this.ts.addData(taskId, body)
@@ -82,7 +84,7 @@ export class TasksController {
     @Param('taskId') taskId: string,
     @Param('chunkId') chunkId: string
   ): ResponseRow[] {
-    return this.ts.getData(taskId, chunkId)
+    return this.ts.getData(taskId, chunkId);
   }
 
   @Delete('/:taskId/data/:chunkId')
@@ -90,7 +92,7 @@ export class TasksController {
     @Param('taskId') taskId: string,
     @Param('chunkId') chunkId: string
   ): void {
-    this.ts.deleteData(taskId, chunkId)
+    this.ts.deleteData(taskId, chunkId);
   }
 
   static validateDataChunk(thing: unknown): thing is ResponseRow[] {

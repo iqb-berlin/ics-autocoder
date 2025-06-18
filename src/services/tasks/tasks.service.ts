@@ -1,6 +1,4 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
-import { IdService } from '../id.service';
-import { DataService } from '../data/data.service';
 import {
   Coder,
   DataChunk,
@@ -10,13 +8,15 @@ import {
   TaskEventType,
   TaskUpdate
 } from 'iqbspecs-coding-service/interfaces/ics-api.interfaces';
+import { IdService } from '../id.service';
+import { DataService } from '../data/data.service';
 import { AutocoderService } from '../autocoder/autocoder.service';
 
 @Injectable()
 export class TasksService {
   constructor(
     private readonly ds: DataService,
-    private readonly as: AutocoderService,
+    private readonly as: AutocoderService
   ) {
     this.restore();
   }
@@ -35,7 +35,7 @@ export class TasksService {
     if (!task.events.length) {
       throw new Error('Invalid task. Task must contain at least the event of it\'s creation');
     }
-    return task.events.sort((a, b) => a.timestamp < b.timestamp ? 1 : -1)[0].status;
+    return task.events.sort((a, b) => (a.timestamp < b.timestamp ? 1 : -1))[0].status;
   }
 
   get(id: string): Task {
@@ -62,7 +62,7 @@ export class TasksService {
       data: [],
       instructions: seed.instructions || (seed.type === 'train' ? this.as.getEmptyScheme() : undefined),
       coder: seed.coder
-    }
+    };
     this.tasks[newTask.id] = newTask;
     return newTask;
   }
@@ -70,6 +70,7 @@ export class TasksService {
   action(id: string, taskAction: TaskAction): Task {
     const task = this.get(id);
     const lastEvent = TasksService.getLastEvent(task);
+    // eslint-disable-next-line default-case
     switch (taskAction) {
       case 'commit':
         if (['start', 'commit'].includes(lastEvent)) {
@@ -80,7 +81,6 @@ export class TasksService {
           message: '',
           timestamp: Date.now()
         });
-        console.log('TODO');
         break;
       case 'abort': {
         task.events.push({
@@ -88,7 +88,6 @@ export class TasksService {
           message: '',
           timestamp: Date.now()
         });
-        console.log('TODO');
         break;
       }
     }
@@ -110,19 +109,19 @@ export class TasksService {
     const chunk: DataChunk = {
       id: this.ds.add(data),
       type: 'input'
-    }
+    };
     task.data.push(chunk);
     return chunk;
   }
 
   static hasData(task: Task, chunkId: string): boolean {
-    return task.data.some(d => d.id == chunkId);
+    return task.data.some(d => d.id === chunkId);
   }
 
   getData(taskId: string, chunkId: string): ResponseRow[] {
     const task = this.get(taskId);
     if (!TasksService.hasData(task, chunkId)) {
-      throw new HttpException(`Data chunk not attached to task`, HttpStatus.NOT_ACCEPTABLE);
+      throw new HttpException('Data chunk not attached to task', HttpStatus.NOT_ACCEPTABLE);
     }
     return this.ds.get(chunkId);
   }
@@ -130,9 +129,9 @@ export class TasksService {
   deleteData(taskId: string, chunkId: string): void {
     const task = this.get(taskId);
     if (!TasksService.hasData(task, chunkId)) {
-      throw new HttpException(`Data chunk not attached to task`, HttpStatus.NOT_ACCEPTABLE);
+      throw new HttpException('Data chunk not attached to task', HttpStatus.NOT_ACCEPTABLE);
     }
-    task.data = task.data.filter(d => d.id != chunkId);
+    task.data = task.data.filter(d => d.id !== chunkId);
     this.ds.delete(chunkId);
   }
 
@@ -157,7 +156,7 @@ export class TasksService {
       id,
       type: 'unknown',
       instructions: exampleCodingScheme
-    }
+    };
   }
 
   update(taskId: string, update: TaskUpdate): Task {

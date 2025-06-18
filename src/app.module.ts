@@ -1,4 +1,5 @@
 import { DynamicModule, Module } from '@nestjs/common';
+import * as path from 'path';
 import { InfoController } from './controller/info/info.controller';
 import { TasksService } from './services/tasks/tasks.service';
 import { TasksController } from './controller/tasks/tasks.controller';
@@ -6,7 +7,6 @@ import { DataService } from './services/data/data.service';
 import { WorkerService } from './services/worker/worker.service';
 import { AutocoderService } from './services/autocoder/autocoder.service';
 import { CodersController } from './controller/coders/coders.controller';
-import * as path from 'path';
 
 @Module({
   imports: [],
