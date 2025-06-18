@@ -1,0 +1,26 @@
+[
+  {
+    "setId": "user1",
+    "id": "M1",
+    "status": "VALUE_CHANGED",
+    "value": 1
+  },
+  {
+    "setId": "user2",
+    "id": "M1",
+    "status": "VALUE_CHANGED",
+    "value": 4
+  },
+  {
+    "setId": "user3",
+    "id": "M1",
+    "status": "VALUE_CHANGED",
+    "value": 355
+  },
+  {
+    "setId": "user4",
+    "id": "M1",
+    "status": "VALUE_CHANGED",
+    "value": -1
+  }
+]
