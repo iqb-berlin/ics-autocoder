@@ -2,7 +2,7 @@ import {
   HttpException, Injectable, HttpStatus, Inject
 } from '@nestjs/common';
 import * as fs from 'fs';
-import { Coder, ResponseRow } from 'iqbspecs-coding-service/interfaces/ics-api.interfaces';
+import { ResponseRow } from 'iqbspecs-coding-service/interfaces/ics-api.interfaces';
 import { AutoCodingInstructions } from 'iqbspecs-coding-service/interfaces/iqb.interfaces';
 import { IdService } from '../id.service';
 
@@ -38,37 +38,7 @@ export class DataService {
     fs.rmSync(chunkFilePath);
   }
 
-  restore(): string[] {
-    return fs.readdirSync(`${this.storageDir}/data/`)
-      .filter(file => file.endsWith('.json'))
-      .map(file => file.substring(0, file.indexOf('.json')));
-  }
-
   store(id: string, coded: ResponseRow[]): void {
     fs.writeFileSync(`${this.storageDir}/data/${id}.json`, JSON.stringify(coded));
-  }
-
-  // eslint-disable-next-line class-methods-use-this
-  getExampleCodingScheme(): AutoCodingInstructions {
-    return <AutoCodingInstructions>{ variableCodings: [], version: '0.0' };
-  }
-
-  listCoders(): Coder[] {
-    return fs.readdirSync(`${this.storageDir}/instructions/`)
-      .filter(fileName => fileName.endsWith('.json'))
-      .map(fileName => {
-        return {
-          id: fileName.substring(0, fileName.indexOf('.json')),
-          label: fileName
-        };
-      });
-  }
-
-  deleteCoder(coderId: string): void {
-    const filePath = `${this.storageDir}/instructions/${coderId}.json`;
-    if (!fs.existsSync(filePath)) {
-      throw new HttpException('Coder not found.', HttpStatus.NOT_FOUND);
-    }
-    fs.rmSync(filePath); // TODO use async
   }
 }

@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Implement new ICS API 0.2 and include working examples">
+    <list default="true" id="e5cf0e1b-637b-4a3e-8158-6a3e21c96bde" name="Changes" comment="Linting">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/coders/coders.controller.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/coders/coders.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/autocoder/autocoder.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/autocoder/autocoder.service.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/data/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/data/data.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/id.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/id.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/tasks/tasks.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tasks/tasks.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +132,7 @@
       <workItem from="1749137799896" duration="232000" />
       <workItem from="1749816579337" duration="6101000" />
       <workItem from="1750232700866" duration="3023000" />
-      <workItem from="1750242273085" duration="1790000" />
+      <workItem from="1750242273085" duration="2189000" />
     </task>
     <task id="LOCAL-00001" summary="Implement current versions if specifications">
       <option name="closed" value="true" />
@@ -348,7 +350,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750245439861</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Linting">
+      <option name="closed" value="true" />
+      <created>1750245912450</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1750245912451</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +396,8 @@
     <MESSAGE value="Make CORS configurable" />
     <MESSAGE value="Add dev compose file" />
     <MESSAGE value="Implement new ICS API 0.2 and include working examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement new ICS API 0.2 and include working examples" />
+    <MESSAGE value="Linting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Linting" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

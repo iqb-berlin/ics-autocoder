@@ -18,7 +18,6 @@ export class TasksService {
     private readonly ds: DataService,
     private readonly as: AutocoderService
   ) {
-    this.restore();
   }
 
   private tasks: { [ id: string] : Task } = { };
@@ -135,30 +134,6 @@ export class TasksService {
     this.ds.delete(chunkId);
   }
 
-  restore(): void {
-    if (Object.keys(this.tasks).length > 0) {
-      throw new Error('Only call restore on bootstrap application');
-    }
-    const data = this.ds.restore();
-    const exampleCodingScheme = this.ds.getExampleCodingScheme();
-    if (!data.length) return;
-    const id = '__orphaned_data__';
-    this.tasks[id] = {
-      data: data.map(chunkId => ({
-        id: chunkId,
-        type: 'input'
-      })),
-      events: [{
-        status: 'create',
-        message: 'automatically created because data dir was not empty on startup',
-        timestamp: Date.now()
-      }],
-      id,
-      type: 'unknown',
-      instructions: exampleCodingScheme
-    };
-  }
-
   update(taskId: string, update: TaskUpdate): Task {
     const task = this.get(taskId);
     if (update.instructions) task.instructions = update.instructions;
@@ -166,13 +141,5 @@ export class TasksService {
     if (update.type) task.type = update.type;
     if (update.coder) task.coder = update.coder;
     return task;
-  }
-
-  listCoders(): Coder[] {
-    return this.ds.listCoders();
-  }
-
-  deleteCoder(coderId: string): void {
-    this.ds.deleteCoder(coderId);
   }
 }

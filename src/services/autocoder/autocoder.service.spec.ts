@@ -6,7 +6,7 @@ describe('AutocoderService', () => {
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [AutocoderService],
+      providers: [AutocoderService]
     }).compile();
 
     service = module.get<AutocoderService>(AutocoderService);
